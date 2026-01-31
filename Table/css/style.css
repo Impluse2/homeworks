@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+caption {
+  font-weight: bold;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+
+th {
+  padding: 0 3px 0;
+}
+
+td {
+  padding: 0 6px 0;
+}
+
+td,
+th {
+  border: 1px solid #000;
+}
+
+.weekends {
+  color: red;
+}
