@@ -36,10 +36,9 @@ ul {
     height: 50px;
 }
 
-.flex-item {
-    display: inline-block;
-    margin-right: 30px;
-    
+.flex-menu {
+    display: flex;
+    gap: 30px
 }
 
 .link-flex {
