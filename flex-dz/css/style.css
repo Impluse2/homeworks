@@ -1,0 +1,47 @@
+html {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    max-width: 1400px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+
+.logo {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.flex-item {
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.link-flex {
+    color: #000;
+}
