@@ -6,12 +6,19 @@ html {
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  min-width: 375px;
   min-height: 100vh;
 }
 
@@ -27,6 +34,13 @@ p {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 a,
@@ -59,6 +73,12 @@ button {
   color: #fff;
   border: none;
   background-color: #3596ed;
+  -webkit-transition:
+    opacity 0.2s,
+    background-color 0.2s;
+  -o-transition:
+    opacity 0.2s,
+    background-color 0.2s;
   transition:
     opacity 0.2s,
     background-color 0.2s;
@@ -110,9 +130,57 @@ button {
   color: #858e8a;
 }
 
+.decor::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(50% - 250px);
+  height: 48px;
+  background: url("../images/decor-icon.svg") repeat-x;
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
   outline: 2px solid #3596ed;
   outline-offset: 1px;
+}
+
+@media (width <= 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .title-large {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .home-page .title-large {
+    text-align: center;
+    max-width: inherit;
+  }
+
+  .title-medium {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 576px) {
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .title-large {
+    font-size: 30px;
+  }
+  .title-medium {
+    font-size: 18px;
+  }
 }
