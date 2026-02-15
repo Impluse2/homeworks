@@ -3,49 +3,49 @@
   padding-bottom: 120px;
 }
 
-.article-title-medium {
+.article__title-medium {
   font-size: 36px;
 }
 
-.article-text {
+.article__text {
   margin-bottom: 20px;
   line-height: 130%;
   color: #535755;
 }
 
-.article-text:last-child {
+.article_text--indent-bottom {
   margin-bottom: 0px;
 }
 
-.article-mb-1 {
+.article__mb-1 {
   margin-bottom: 80px;
 }
 
-.article-mb-2 {
+.article__mb-2 {
   margin-bottom: 40px;
 }
 
-.article-decor-wrapper {
+.article__decor-wrapper {
   position: relative;
 }
 
-.article-decor-wrapper-1::before {
+.article__decor-wrapper-1::before {
   top: 100px;
   left: 0;
 }
 
-.article-decor-wrapper-2::before {
+.article__decor-wrapper-2::before {
   position: absolute;
   bottom: 136px;
   right: 0;
 }
 
-.article-list {
+.article__list {
   margin-top: 0;
   padding-left: 21px;
 }
 
-.list-item:not(:last-child) {
+.article__list-item--bottom {
   margin-bottom: 12px;
 }
 
@@ -54,7 +54,7 @@
   color: #3596ed;
 }
 
-.article-play-button {
+.article__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,24 +82,24 @@
   transition: background-color 0.2s;
 }
 
-.article-play-button:hover {
+.article__play-button:hover {
   background-color: #39a2ff;
 }
 
-.article-play-button:not(:disabled):active {
+.article__play-button:not(:disabled):active {
   background-color: #2d81ca;
 }
 
 @media (width <= 768px) {
-  .article-decor-wrapper::before {
+  .article__decor-wrapper::before {
     display: none;
   }
 
-  .article-title-medium {
+  .article__title-medium {
     font-size: 32px;
   }
 
-  .article-mb-1 {
+  .article__mb-1 {
     margin-bottom: 60px;
   }
 }
@@ -110,24 +110,24 @@
     padding-bottom: 80px;
   }
 
-  .article-title-medium {
+  .article__title-medium {
     font-size: 28px;
   }
 
-  .article-mb-1 {
+  .article__mb-1 {
     margin-bottom: 40px;
   }
 
-  .article-mb-2 {
+  .article__mb-2 {
     margin-bottom: 30px;
   }
 
-  .article-play-button {
+  .article__play-button {
     width: 50px;
     height: 50px;
   }
 
-  .article-play-button img {
+  .article__play-button img {
     width: 18px;
     height: 18px;
   }
