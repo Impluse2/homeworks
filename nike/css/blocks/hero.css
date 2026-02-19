@@ -151,4 +151,5 @@
 
 .hero__details-icon {
   stroke: currentColor;
+  fill: none;
 }
