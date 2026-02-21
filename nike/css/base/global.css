@@ -45,11 +45,16 @@ button:focus-visible {
   font-weight: 400;
 }
 
+.title-xs,
 .title-sm,
 .title-md {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--main-color);
+}
+
+.title-xs {
+  font-size: 18px;
 }
 
 .title-md {
