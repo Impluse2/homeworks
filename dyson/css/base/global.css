@@ -1,0 +1,8 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 300;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
+}
