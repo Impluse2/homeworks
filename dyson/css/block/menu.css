@@ -1,0 +1,35 @@
+.menu__list {
+  gap: 30px;
+  list-style: none;
+}
+
+@media (width > 1290px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (width < 1290px) {
+  .menu__list {
+    display: none;
+  }
+}
+
+.menu__link {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 19px;
+  color: #fff;
+  -webkit-transition: opacity var(--transition-time);
+  -o-transition: opacity var(--transition-time);
+  transition: opacity var(--transition-time);
+  white-space: nowrap;
+}
+
+@media (any-hover: hover) {
+  .menu__link:hover {
+    opacity: 0.8;
+  }
+}
