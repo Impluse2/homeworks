@@ -3,3 +3,18 @@
 @import "./base/fonts.css";
 @import "./base/vars.css";
 @import "./base/global.css";
+
+/* block */
+@import "./block/header.css";
+@import "./block/menu.css";
+@import "./block/burger.css";
+@import "./block/banner.css";
+@import "./block/product.css";
+@import "./block/opinion.css";
+@import "./block/about.css";
+@import "./block/offers.css";
+@import "./block/feedback.css";
+@import "./block/faq.css";
+@import "./block/news.css";
+@import "./block/contact.css";
+@import "./block/footer.css";
