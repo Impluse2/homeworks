@@ -1,0 +1,10 @@
+import "./modules/burger.js";
+import "./modules/dropdown.js";
+import "./modules/showMore.js";
+import "./modules/slider.js";
+import "./modules/review.js";
+import "./modules/photoGallery.js";
+import "./modules/feedbackShowMore.js";
+import "./modules/accordion.js";
+import "./modules/newsShowMore.js";
+import "./modules/cart.js";

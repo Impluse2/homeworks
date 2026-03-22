@@ -1,0 +1,29 @@
+:root {
+  /* fonts */
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "NAMU", sans-serif;
+
+  /* container */
+  --container-width: 1360px;
+  --container-padding: 15px;
+
+  /* color */
+  --accent-color: #ffea00;
+  /* transitions */
+
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+
+  --general-text: #111;
+  --accent-text: #000;
+  --general-bg: #fff;
+  --accent-bg: #f8f8f8;
+  --accent-color: #c5358c;
+
+}

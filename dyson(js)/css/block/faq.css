@@ -1,0 +1,131 @@
+.main__faq {
+  background: var(--accent-bg);
+}
+
+.faq__title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 42px;
+  color: var(--general-text);
+  padding-top: 150px;
+  margin-bottom: 59px;
+}
+
+.accordion-list {
+  padding-bottom: 150px;
+}
+
+.accordion-list svg {
+  width: 100%;
+  shape-rendering: crispEdges;
+}
+
+.accordion-list__link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  max-width: 1360px;
+  padding: 31px 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--general-text);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.accordion-list__item--opened {
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.accordion-list__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--general-text);
+}
+
+.accordion-list__icon {
+  max-width: 36px;
+  max-height: 36px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.accordion-list__item--opened:hover .accordion-list__icon {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.accordion-list__item--opened:hover .accordion-list__icon path {
+  fill: var(--accent-color);
+}
+
+.accordion-list__content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  width: 1000px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+@media (width < 1050px) {
+  .faq__title {
+    font-size: 36px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .accordion-list {
+    padding-bottom: 100px;
+  }
+
+  .accordion-list__link {
+    padding: 25px 0;
+    gap: 20px;
+  }
+
+  .accordion-list__title {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 80%;
+  }
+
+  .accordion-list__content {
+    width: 100%;
+    font-size: 16px;
+    padding-right: 20px;
+  }
+
+  .accordion-list__icon {
+    min-width: 30px;
+    min-height: 30px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+
+  .accordion-list__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+}
